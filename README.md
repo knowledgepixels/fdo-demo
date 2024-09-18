@@ -2,7 +2,7 @@
 
 ### Technical Basis
 
-- [FDO Framework Ontology](https://w3id.org/fdof/ontology)
+- [FDO Framework](https://fairdigitalobjectframework.org/) [Ontology](https://w3id.org/fdof/ontology)
 - [Nanopublications](https://nanopub.net/)
 - [Nanopublication Server Network](https://monitor.knowledgepixels.com/)
 
