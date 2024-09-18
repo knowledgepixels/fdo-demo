@@ -18,7 +18,7 @@
 
 FIP matrix:
 - FDO ID/URL: https://w3id.org/np/RA1sDguLHiK1VcRs_kHLCE0IxdIIwihrn8WTxehuzcaAg#fip-matrix (we can later also use nicer URLs like `https://example.org/fdo4de/fip-matrix`)
-- Nanopub ID/URL: https://w3id.org/np/RA1sDguLHiK1VcRs_kHLCE0IxdIIwihrn8WTxehuzcaAg
+- Metadata record (nanopublication) ID/URL: https://w3id.org/np/RA1sDguLHiK1VcRs_kHLCE0IxdIIwihrn8WTxehuzcaAg
 - Digital Object file (bit sequence): https://raw.githubusercontent.com/peta-pico/dsw-nanopub-api/873763c608a0559d4ebc5e070c7ef555b2de9e6d/tables/new_matrix.csv (this file can live side by side with the nanopublication, or on a different server/system; can be open or have restricted access with required authentication)
 
 More examples in [fdo-examples](https://github.com/knowledgepixels/fdo-demo/tree/main/fdo-examples).
