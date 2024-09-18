@@ -1,5 +1,10 @@
 # FDO Demo
 
+### Basis
+
+- [FDO Framework Ontology](https://w3id.org/fdof/ontology)
+- [Nanopublications](https://nanopub.net/)
+
 ### Examples
 
 - [FIP matrix](https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs)
