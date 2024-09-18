@@ -26,7 +26,7 @@ More examples in [fdo-examples](https://github.com/knowledgepixels/fdo-demo/tree
 ### Creating FDOs
 
 - [Template for manual creation](https://nanodash.knowledgepixels.com/publish?252&template=https://w3id.org/np/RADQPVz2_GAPjL6tU8PiA010UNnsi7sjEEOOHLETgyzi8&template-version=latest)
-- Existing nanopublication libraries ([nanopub-java](https://github.com/Nanopublication/nanopub-java), [nanopub-rs](https://vemonet.github.io/nanopub-rs/)) can be used for automatic creation
+- Existing nanopublication libraries and command-line tools ([nanopub-java](https://github.com/Nanopublication/nanopub-java), [nanopub-rs](https://vemonet.github.io/nanopub-rs/)) can be used for automatic creation
 
 ### Protocol
 
