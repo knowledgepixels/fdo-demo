@@ -7,7 +7,10 @@
 
 ### Examples
 
-- [FIP matrix](https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs)
+- FIP matrix:
+  - Nanopub ID/URL: https://w3id.org/np/RA1sDguLHiK1VcRs_kHLCE0IxdIIwihrn8WTxehuzcaAg
+  - FDO ID/URL: https://w3id.org/np/RA1sDguLHiK1VcRs_kHLCE0IxdIIwihrn8WTxehuzcaAg#fip-matrix
+  - Digital Object file (bit sequence): https://raw.githubusercontent.com/peta-pico/dsw-nanopub-api/873763c608a0559d4ebc5e070c7ef555b2de9e6d/tables/new_matrix.csv
 
 ### Protocol
 
