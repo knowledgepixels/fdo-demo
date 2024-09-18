@@ -13,3 +13,9 @@ Getting object:
 Getting metadata record:
 
     $ curl -L -H 'FDO: record' -H 'Accept: application/ld+json' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+
+### Principles
+
+- Open standards
+- No lock-in
+- Designed for scalability
