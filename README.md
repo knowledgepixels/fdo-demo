@@ -23,7 +23,17 @@ FIP matrix:
 
 More examples in [fdo-examples](https://github.com/knowledgepixels/fdo-demo/tree/main/fdo-examples).
 
+### Creating FDOs
+
+- [Template for manual creation](https://nanodash.knowledgepixels.com/publish?252&template=https://w3id.org/np/RADQPVz2_GAPjL6tU8PiA010UNnsi7sjEEOOHLETgyzi8&template-version=latest)
+- Existing nanopublication libraries ([nanopub-java](https://github.com/Nanopublication/nanopub-java), [nanopub-rs](https://vemonet.github.io/nanopub-rs/)) can be used for automatic creation
+
 ### Protocol
+
+HTTP with new header field `FDO`:
+
+- `FDO: record` returns the metadata record for the given FDO (default)
+- `FDO: object` returns the actual object (dataset, picture, etc.)
 
 Getting object:
 
@@ -32,10 +42,6 @@ Getting object:
 Getting metadata record:
 
     $ curl -L -H 'FDO: record' -H 'Accept: application/ld+json' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
-
-### Creating FDOs
-
-- [Template for manual creation](https://nanodash.knowledgepixels.com/publish?252&template=https://w3id.org/np/RADQPVz2_GAPjL6tU8PiA010UNnsi7sjEEOOHLETgyzi8&template-version=latest)
 
 ### Querying
 
