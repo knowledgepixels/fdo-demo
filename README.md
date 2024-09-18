@@ -35,11 +35,11 @@ HTTP with new header field `FDO`:
 - `FDO: record` returns the metadata record for the given FDO (default)
 - `FDO: object` returns the actual object (dataset, picture, etc.)
 
-Getting object:
+Using `curl` to get FDO object:
 
     $ curl -L -H 'FDO: object' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
 
-Getting metadata record:
+Using `curl` to get FDO metadata record:
 
     $ curl -L -H 'FDO: record' -H 'Accept: application/ld+json' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
 
