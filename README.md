@@ -11,6 +11,8 @@
 - Open standards (HTTP, RDF, SPARQL)
 - No lock-in (Open Source software, open ecosystem, "run it yourself" option)
 - Designed for scalability (distribution, decentralization, data replication/partitioning)
+- Flexibility / freedom (free choice of: identifier schemes, domain vocabularies, servers, data storage locations)
+- Fast prototyping (learing while doing; ecosystem is up and running, ready to be used, and will keep evolving)
 
 ### Examples
 
