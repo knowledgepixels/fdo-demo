@@ -16,6 +16,6 @@ Getting metadata record:
 
 ### Principles
 
-- Open standards
-- No lock-in
-- Designed for scalability
+- Open standards (HTTP, RDF, SPARQL)
+- No lock-in (Open Source software, open ecosystem, "run it yourself" option)
+- Designed for scalability (distribution, decentralization, data partitioning)
