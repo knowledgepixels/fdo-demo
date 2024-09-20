@@ -50,7 +50,7 @@ This is compliant with the FDO Framework specification (see above), with some sm
 Query to get FDOs:
 
 - [Simple client to API](https://tapas.knowledgepixels.com/tapas.html?api=RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ&op=/get-fdos)
-- Same on the command line: `curl -L 'https://query.knowledgepixels.com/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'`
+- Same on the command line: `$ curl -L 'https://query.knowledgepixels.com/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'`
 - [Custom SPARQL query](https://query.knowledgepixels.com/tools/full/yasgui.html#query=prefix+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aprefix+np%3A+%3Chttp%3A%2F%2Fwww.nanopub.org%2Fnschema%23%3E%0Aprefix+npa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnanopub%2Fadmin%2F%3E%0Aprefix+npx%3A+%3Chttp%3A%2F%2Fpurl.org%2Fnanopub%2Fx%2F%3E%0Aprefix+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0Aprefix+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix+fdof%3A+%3Chttps%3A%2F%2Fw3id.org%2Ffdof%2Fontology%23%3E%0A%0Aselect+%3Ffdo+%3Ftype+%3Fnp+%3Fcreator+where+%7B%0A++graph+npa%3Agraph+%7B%0A++++%3Fnp+npx%3AhasNanopubType+fdof%3AFAIRDigitalObject+.%0A++++%3Fnp+dct%3Acreator+%3Fcreator+.%0A++++%3Fnp+npa%3AhasValidSignatureForPublicKey+%3Fpubkey+.%0A++++filter+not+exists+%7B+%3Fnpx+npx%3Ainvalidates+%3Fnp+%3B+npa%3AhasValidSignatureForPublicKey+%3Fpubkey+.+%7D%0A++++%3Fnp+np%3AhasAssertion+%3Fa+.%0A++%7D%0A++graph+%3Fa+%7B%0A++++%3Ffdo+fdof%3AhasInformationObjectType+%3Ftype+.%0A++%7D%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=%2Frepo%2Ffull&requestMethod=POST&tabTitle=Query&headers=%7B%7D&outputFormat=table)
 
 ### Type Registry
@@ -84,8 +84,8 @@ Checking availability of a nanopublication (using [nanopub-java](https://github.
 
 All APIs are distributed and redundant (and thereby scalable) too, for example:
 
-   curl -L 'https://query.knowledgepixels.com/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'
-   curl -L 'https://query.np.trustyuri.net/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'
-   curl -L 'https://query.np.kpxl.org/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'
+    $ curl -L 'https://query.knowledgepixels.com/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'
+    $ curl -L 'https://query.np.trustyuri.net/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'
+    $ curl -L 'https://query.np.kpxl.org/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'
 
 See the [monitor](https://monitor.knowledgepixels.com/) for the current network of services.
