@@ -10,27 +10,28 @@
 @prefix ns1: <http://purl.org/np/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix fdof: <https://w3id.org/fdof/ontology#> .
 
 sub:Head {
-  this: np:hasAssertion sub:assertion;
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
     np:hasProvenance sub:provenance;
-    np:hasPublicationInfo sub:pubinfo;
-    a np:Nanopublication .
+    np:hasPublicationInfo sub:pubinfo .
 }
 
 sub:assertion {
   <https://github.com/knowledgepixels/fdo-demo/raw/main/fdo-examples/abc-demo-table/abc-demo-table.csv>
-    <https://w3id.org/fdof/ontology#hasEncodingFormat> <https://iana.org/assignments/media-types/text/csv>;
-    <https://w3id.org/fdof/ontology#materializes> sub:abc-table .
+    fdof:hasEncodingFormat <https://iana.org/assignments/media-types/text/csv>;
+    fdof:materializes sub:abc-table .
   
   <https://github.com/knowledgepixels/fdo-demo/raw/main/fdo-examples/abc-demo-table/abc-demo-table.xlsx>
-    <https://w3id.org/fdof/ontology#hasEncodingFormat> <https://iana.org/assignments/media-types/application/vnd.ms-excel>;
-    <https://w3id.org/fdof/ontology#materializes> sub:abc-table .
+    fdof:hasEncodingFormat <https://iana.org/assignments/media-types/application/vnd.ms-excel>;
+    fdof:materializes sub:abc-table .
   
-  sub:abc-table a <https://w3id.org/fdof/ontology#FAIRDigitalObject>;
+  sub:abc-table a fdof:FAIRDigitalObject;
     rdfs:label "ABC demo table";
-    <https://w3id.org/fdof/ontology#hasInformationObjectType> <https://w3id.org/fdof/types#Dataset>;
-    <https://w3id.org/fdof/ontology#hasMetadata> this: .
+    fdof:hasInformationObjectType <https://w3id.org/fdof/types#Dataset>;
+    fdof:hasMetadata this: .
 }
 
 sub:provenance {
