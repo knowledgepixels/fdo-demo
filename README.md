@@ -53,4 +53,14 @@ This is compliant with the FDO Framework specification (see above), with some sm
 
 With nanopublications, the same system that is used to describe/register FDOs can also be used to describe/register FDO Types (and many other things).
 
-[TODO]
+- Template to declare new FDO types (TODO)
+- [Example nanopublication declaring an FDO type](https://w3id.org/np/RAddkhsbvqc-VM_Y5t7uf_AD-WJbd7WybVmJdx7TPDV4o)
+- Query FDO types: (TODO)
+
+### Additional Metadata
+
+TODO:
+
+- Define new FDO type 'Table'
+- Allow for additional metadata on rows (names, descriptions, concept IDs, ...)
+- Query FDOs by table columns
