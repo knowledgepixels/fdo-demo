@@ -71,7 +71,7 @@ TODO:
 
 ### Distributed, Redundant, Scalable
 
-Checking availability of nanopublication (using [nanopub-java](https://github.com/Nanopublication/nanopub-java) as command-line tool):
+Checking availability of a nanopublication (using [nanopub-java](https://github.com/Nanopublication/nanopub-java) as command-line tool):
 
     $ np status -a https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
     URL: https://np.knowledgepixels.com/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
@@ -81,3 +81,11 @@ Checking availability of nanopublication (using [nanopub-java](https://github.co
     URL: http://server.nanopubs.lod.labs.vu.nl/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
     URL: http://app.tkuhn.eculture.labs.vu.nl/nanopub-server-4/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
     Found on 6 nanopub servers.
+
+All APIs are distributed and redundant (and thereby scalable) too, for example:
+
+   curl -L 'https://query.knowledgepixels.com/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'
+   curl -L 'https://query.np.trustyuri.net/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'
+   curl -L 'https://query.np.kpxl.org/api/RAZgtM7Kzb0aTBlH4coOzlfgzBOoofqROCIMZTW3KliLQ/get-fdos?query=matrix'
+
+See the [monitor](https://monitor.knowledgepixels.com/) for the current network of services.
