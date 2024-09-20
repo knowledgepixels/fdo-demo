@@ -35,13 +35,13 @@ HTTP with new header field `FDO`:
 - `FDO: record` returns the metadata record for the given FDO (default)
 - `FDO: object` returns the actual object (dataset, picture, etc.)
 
+Using `curl` to get FDO metadata record (as nanopublication):
+
+    $ curl -L -H 'FDO: record' -H 'Accept: application/ld+json' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+
 Using `curl` to get FDO object:
 
     $ curl -L -H 'FDO: object' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
-
-Using `curl` to get FDO metadata record:
-
-    $ curl -L -H 'FDO: record' -H 'Accept: application/ld+json' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
 
 This is compliant with the FDO Framework specification (see above), with some small suggestions for improvement, which we will discuss with the FDO community.
 
@@ -68,3 +68,16 @@ TODO:
 - Define new FDO type 'Table'
 - Allow for additional metadata on rows (names, descriptions, concept IDs, ...)
 - Query FDOs by table columns
+
+### Distributed, Redundant, Scalable
+
+Checking availability of nanopublication (using [nanopub-java](https://github.com/Nanopublication/nanopub-java) as command-line tool):
+
+    $ np status -a https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+    URL: https://np.knowledgepixels.com/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+    URL: http://130.60.24.146:7880/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+    URL: http://server.np.dumontierlab.com/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+    URL: https://server.np.trustyuri.net/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+    URL: http://server.nanopubs.lod.labs.vu.nl/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+    URL: http://app.tkuhn.eculture.labs.vu.nl/nanopub-server-4/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+    Found on 6 nanopub servers.
