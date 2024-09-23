@@ -37,11 +37,11 @@ HTTP with new header field `FDO`:
 
 Using `curl` to get FDO metadata record (as nanopublication):
 
-    $ curl -L -H 'FDO: record' -H 'Accept: application/ld+json' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+    $ curl -L -H 'FDO: record' -H 'Accept: application/ld+json' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs#fip-matrix
 
 Using `curl` to get FDO object:
 
-    $ curl -L -H 'FDO: object' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs
+    $ curl -L -H 'FDO: object' https://w3id.org/np/RA_03LCp_LLNR-3eGEIttU0LL5PqkgJRCA4dqN__mY-bs#fip-matrix
 
 This is compliant with the FDO Framework specification (see above), with some small suggestions for improvement, which we will discuss with the FDO community.
 
