@@ -60,14 +60,6 @@ With nanopublications, the same system that is used to describe/register FDOs ca
 - [Template to declare new FDO types](https://nanodash.knowledgepixels.com/publish?template=https://w3id.org/np/RAGgM9kYzzaGF9eY1eawXCG-U-_HOEdw6NOnghAb5ijZA&template-version=latest)
 - [Example nanopublication declaring an FDO type](https://w3id.org/np/RAddkhsbvqc-VM_Y5t7uf_AD-WJbd7WybVmJdx7TPDV4o)
 
-### Additional Metadata
-
-TODO:
-
-- Define new FDO type 'Table'
-- Allow for additional metadata on rows (names, descriptions, concept IDs, ...)
-- Query FDOs by table columns
-
 ### Distributed, Redundant, Scalable
 
 Checking availability of a nanopublication (using [nanopub-java](https://github.com/Nanopublication/nanopub-java) as command-line tool):
